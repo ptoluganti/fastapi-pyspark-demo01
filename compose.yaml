@@ -1,0 +1,9 @@
+services:
+  server:
+    build:
+      context: .
+    image: myrestapi:1.0
+    ports:
+      - 8080:8080
+    volumes:
+      - ./data/:/data/:r
